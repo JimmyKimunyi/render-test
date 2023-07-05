@@ -20,9 +20,7 @@ app.use(requestLogger);
 app.use(cors());
 
 morgan.token("postData", (req) => {
-  if (req.method === "POST") {
-    return JSON.stringify(req.body);
-  }
+  if (req.method === "POST") return JSON.stringify(req.body);
   return " - ";
 });
 app.use(morgan(" :method :url :status :response-time ms - :postData"));
