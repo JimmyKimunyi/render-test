@@ -49,7 +49,7 @@ app.get("/", (req, res) => {
 
 app.get("/api/notes", (req, res) => {
   res.json(notes);
-  console.log("Request no 2");
+  console.log("request no 2");
 });
 
 const generateId = () => {
