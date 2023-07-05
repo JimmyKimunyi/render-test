@@ -12,7 +12,7 @@ const requestLogger = (req, _res, next) => {
 };
 
 const unknownEndpoint = (req, res) => {
-  return res.status(404).send({ error: "Unknown endpoint" });
+  return res.status(404).send({ error: "unknown endpoint" });
 };
 app.use(express.json());
 app.use(express.static("dist"));
