@@ -50,6 +50,7 @@ app.get("/", (req, res) => {
 app.get("/api/notes", (req, res) => {
   res.json(notes);
   console.log("request no 2");
+  console.log(process.env.NODE_ENV);
 });
 
 const generateId = () => {
